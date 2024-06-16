@@ -1,0 +1,16 @@
+body{
+    color: white;
+    background-color: #001B3E;
+    margin: 10%;
+}
+
+a{
+    color: white;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
