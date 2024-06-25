@@ -1,88 +1,90 @@
 <!DOCTYPE html>
-<html>
-
-<head>
-    <link rel="stylesheet" href="../blogFormat.css" </head>
-
-<body>
-    <h1>An interactive exhibit for the Bristol Museum</h1>
-    <h2>By University of Bristol Computer Science student team: Sonny, Sergi, Thomas, Daniel and Milosz</h2>
-    <video controls class="center">
-        <source src="Workflow.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-    </video>
-    <p>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../blogFormat.css" </head>
+        <title>An interactive exhibit for the Bristol Museum</title>
+    </head>
+    <body>
+        <h1>An interactive exhibit for the Bristol Museum</h1>
+        <h2>By University of Bristol Computer Science student team: Sonny, Sergi, Thomas, Daniel and Milosz</h2>
+        <video controls class="center">
+            <source src="Workflow.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <p>
         Back in September five of us gathered round a table thinking about the prompt
         given to us by Bristol Museum: develop an interactive exhibit where visitors
         touch replicas of artefacts and related information appears, creating an
         interesting and fun way to learn about these objects.
-    </p>
-    <p>
+        </p>
+        <p>
         After many months and iterations, we finally came to the design you see
         above, an exhibit consisting hotspots over the replicas on a table. When
         the hotspots are touched, information about each artifact is displayed.
-    </p>
-    <p>
+        </p>
+        <p>
         But how did we get here? With little idea on how to tackle such a task we
         split it into the three logical sections: how do people interact with the
         replicas? How do we display the information? How do we make it easy for
         museum staff to use in future exhibitions?
-    </p>
-    <h3>How do people interact with the replicas?</h3>
-    <p>
+        </p>
+        <h3>How do people interact with the replicas?</h3>
+        <p>
         This was tough as we didn't have any examples to work off - we couldn't
         find anyone who'd done something similar.
-    </p>
-    <p>
+        </p>
+        <p>
         We explored many possible solutions; looking at methods such as computer
         vision, lasers and detecting decreases in light. Through our exploration we
         ultimately settled on MediaPipe; an AI-powered hand tracking model which
         allowed us to see how users touched the replicas.
-    </p>
-    <img src="Picture1.png" alt="Image of how hotspots are selected" class="center">
-    <p>
+        </p>
+        <img src="Picture1.png" alt="Image of how hotspots are selected" class="center">
+        <p>
         We created hotspots in which the replicas could be placed and animations
         to prompt visitors to interact.
-    </p>
-    <p>
+        </p>
+        <p>
         While two of us worked on this, the rest of the team was busy creating a
         user interface, so users could engage with the exhibition.
-    </p>
-    <h3>How do we display the information?</h3>
-    <p>
+        </p>
+        <h3>How do we display the information?</h3>
+        <p>
         This was a simpler task; the museum had informed us that they wanted
         to use projectors to show this information, so we created a dynamic
         display with a black background and white text to make it less blocky
         and more appealing to the eye. After a few iterations with museum staff
         and user feedback we came to the structure shown. Videos, image
         slideshows and text can all be included.
-    </p>
-    <img src="Picture2.png" alt="Image of model display screen" class="center">
-    <h3>How do we make it easy for museum staff to use in future exhibitions?</h3>
-    <p>
+        </p>
+        <img src="Picture2.png" alt="Image of model display screen" class="center">
+        <h3>How do we make it easy for museum staff to use in future exhibitions?</h3>
+        <p>
         We wanted to create an easy-to-use system with equipment most museums
         would already have.
-    </p>
-    <p>
+        </p>
+        <p>
         A projector displays hotspots and a camera detects when people touch
         them. The camera and projector can be calibrated with the click of
         a button. A second projector displays information, which changes
         according to how the users interact with the hotspots.
-    </p>
-    <p>
+        </p>
+        <p>
         We also designed an editor allowing staff to add, remove and position
         the hotspots, and attach relevant information to them. We added import
         and export features, so the design can be used on different machines.
-    </p>
-    <h3>Conclusion</h3>
-    <p>
+        </p>
+        <h3>Conclusion</h3>
+        <p>
         Overall this was a fun project to work on. We learnt a lot
         about computer vision, hardware, frontend development and
         working as a team on a larger project. We are grateful for Bristol
         Museum for coming to us with such an interesting
         task and are looking forward to seeing this software in action.
-    </p>
+        </p>
 
-</body>
-
+        
+    </body>
 </html>
