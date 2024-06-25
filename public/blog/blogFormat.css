@@ -16,11 +16,21 @@ a{
   width: 50%;
 }
 
+.small {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+}
+
 @media (max-width: 1000px){
     body{
         margin: 5%
     }
     .center {
         width: 95%;
+    }
+    .small {
+        width: 90%;
     }
 }
