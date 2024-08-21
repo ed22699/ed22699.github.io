@@ -15,39 +15,34 @@
 
 <body>
     <!-- The header -->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav id="navbar" class="navbar navbar-expand-lg bg-body-tertiary border-bottom sticky-top">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">Sonny Cooper</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
                 aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
-                    <a class="nav-link active" aria-current="page" href="#">About</a>
-                    <a class="nav-link" href="#">Projects</a>
-                    <a class="nav-link" href="#">Blog</a>
+                    <a class="nav-link" href="#about">About</a>
+                    <a class="nav-link" href="#projects">Projects</a>
+                    <a class="nav-link" href="#blog">Blog</a>
                     <a class="nav-link" href="./cv/SonnyCooperCV.pdf">CV</a>
                 </div>
             </div>
         </div>
     </nav>
-    <!-- <div class="container"> -->
-    <!--     <li><a href="./public/blog/blogMainPage.html">Blog</a></li> -->
-    <!--     <li><a href="./public/projects/projectsMainPage.html">Projects</a></li> -->
-    <!--     <li><a href="./cv/SonnyCooperCV.pdf">CV</a></li> -->
-    <!-- </div> -->
-    <div class="container">
-        <h1>Sonny Cooper</h1>
+    <div data-bs-spy="scroll" data-bs-target="#navbar" data-bs-smooth-scroll="true" class="container">
+        <h1 id="about">Sonny Cooper</h1>
         <h2>Third year computer science MEng student studying
             at University of Bristol</h2>
         <br>
         <div>
-            <h1>Projects</h1>
+            <h1 id="projects">Projects</h1>
             <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 g-3">
                 <div class="col">
                     <div class="card text-bg-light shadow-sm ">
-                        <img src="./assets/wallProjections/Wall-Projections-Image.png" class="card-img-top"
+                        <img src="./assets/wallProjections/Wall-Projections-Image.png" class="card-img-top rounded"
                             alt="Wall projections setup">
                         <div class="card-body">
                             <h5 class="card-title">Wall Projections</h5>
@@ -70,7 +65,7 @@
                 </div>
                 <div class="col">
                     <div class="card text-bg-light shadow-sm ">
-                        <img src="./assets/imageSorter/starting-screen.png" class="card-img-top"
+                        <img src="./assets/imageSorter/starting-screen.png" class="card-img-top rounded"
                             alt="Wall projections setup">
                         <div class="card-body">
                             <h5 class="card-title">Image Sorter</h5>
@@ -94,14 +89,14 @@
         </div>
         <br>
         <div>
-            <h1>Blog Posts</h1>
+            <h1 id="blog">Blog Posts</h1>
             <div class"row row-cols-1">
                 <div class="col">
                     <div
                         class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative text-bg-light">
-                        <div class="col-auto d-none d-lg-block">
+                        <div class="col-auto d-none d-md-block">
                             <img src="./assets/wallProjections/Wall-Projections-Image.png" alt="wall projection setup"
-                                style="max-width: 15rem;">
+                                style="max-width: 15rem; max-height: 10rem;" class="img-thumbnail">
                         </div>
                         <div class="col p-4 d-flex flex-column position-static">
                             <h3 class="mb-0">An interactive exhibit for the Bristol Museum</h3>
@@ -122,9 +117,9 @@
             <div class="col">
                 <div
                     class="row g-0 border rounded overflow-hidden flex-md-row mb-3 shadow-sm h-md-250 position-relative text-bg-light">
-                    <div class="col-auto d-none d-lg-block">
+                    <div class="col-auto d-none d-md-block">
                         <img src="./assets/neovim/neovimLogo.png" alt="neovim logo"
-                            style="max-width: 15rem;">
+                            style="max-width: 15rem; max-height: 10rem;" class="img-thumbnail">
                     </div>
                     <div class="col p-4 d-flex flex-column position-static">
                         <h3 class="mb-0">Learning Neovim</h3>
