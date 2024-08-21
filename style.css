@@ -1,27 +1,39 @@
 body{
-    color: white;
     background-color: #001B3E;
+    color: white;
 }
-#header{
+.container{
+    /*height: 40px;*/
+    /*left: 0px;*/
+    /*position: fixed;*/
+    /*top: 0px;*/
     background-color: #253764;
-    margin: 0;
-    height: 40px;
-    width: 100%;
-    position: fixed;
-    top: 0px;
-    left: 0px;
+    display: flex;
+    gap: 1rem;
+    justify-content: flex-end;
 }
+
+.container li{
+    list-style: none;
+    flex-basis: 0;
+}
+
+
+a{
+    color: white;
+}
+
 #header a{
-    display: inline-block;
-    text-align: center;
     background-color: #001B3E;
     color: white;
-    width: 100px;
-    height: 30px;
-    position: relative;
-    top: 5px;
+    display: inline-block;
     float: right;
+    height: 30px;
     margin: 0px 5px;
+    position: relative;
+    text-align: center;
+    top: 5px;
+    width: 100px;
 }
 .title{
     position: absolute;
