@@ -106,12 +106,17 @@
                         <div class="card-body">
                             <p class="card-subtitle">
                                 <span class="badge text-bg-info text-body-secondary">Swift</span>
+                                <span class="badge text-bg-info text-body-secondary">Realm</span>
                             </p>
                             <h5 class="card-title">Timed Progress</h5>
                             <p class="card-text">A mobile app where you can schedule
                                 deadlines or weekly habits along with their estimated
                                 time for completion and track timed progress</p>
-                            <a href="#" class="card-link btn btn-outline-primary">More</a>
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal"
+                                data-bs-target="#timedProgressModal">
+                                More
+                            </button>
                             <a href="https://github.com/SonnyCoop/AdapSchApp" class="card-link btn btn-outline-primary">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                     class="bi bi-github" viewBox="0 0 16 16">
@@ -176,6 +181,135 @@
                 </div>
             </div>
         </div>
+    </div>
+
+
+
+    <!-- Timed Progress Modal -->
+    <div class="modal fade" id="timedProgressModal" tabindex="-1" aria-labelledby="timedProgressModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title" id="timedProgressModalLabel">Timed Progress</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <p>
+                            <span class="badge text-bg-info text-body-secondary">Swift</span>
+                            <span class="badge text-bg-info text-body-secondary">Realm</span>
+                        </p>
+                        <p>A mobile app where you can schedule
+                            deadlines or weekly habits along with their estimated
+                            time for completion and track timed progress</p>
+                        <!-- carousel -->
+                        <div id="carousel" class="carousel slide carousel-dark bg-secondary-subtle"
+                            style="height: 500px;">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active"
+                                    aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carousel" data-bs-slide-to="1"
+                                    aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carousel" data-bs-slide-to="2"
+                                    aria-label="Slide 3"></button>
+                                <button type="button" data-bs-target="#carousel" data-bs-slide-to="3"
+                                    aria-label="Slide 4"></button>
+                                <button type="button" data-bs-target="#carousel" data-bs-slide-to="4"
+                                    aria-label="Slide 5"></button>
+                            </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="../../assets/timedProgress/baseScreen.png" class="d-block w-100"
+                                        style="height: 500px; object-fit: contain;" alt="base screen">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../../assets/timedProgress/timer.png" class="d-block w-100"
+                                        style="height: 500px; object-fit: contain;" alt="timer">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../../assets/timedProgress/dailyTask.png" class="d-block w-100"
+                                        style="height: 500px; object-fit: contain;" alt="daily tasks">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../../assets/timedProgress/weeklyTask.png" class="d-block w-100"
+                                        style="height: 500px; object-fit: contain;" alt="weekly tasks">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../../assets/timedProgress/edit.png" class="d-block w-100"
+                                        style="height: 500px; object-fit: contain;" alt="edit screen">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carousel"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carousel"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                        <br>
+                        <h2>Overview</h2>
+                        <p>I built this application with the intention of bettering my time
+                            management. The base concept of the app came from Universities 'hours
+                            per credit' systems where they prescribe a recommended amount of time to
+                            focus on each module per week. For example, a 20 credit module would be
+                            200 hours of work. Working off this concept my app lets you add tasks
+                            with their required hours per week so you may: view this progress, see if you
+                            are hitting the goals and see whether you are neglecting certain modules.</p>
+                        <p>
+                            I later expanded this focus on Uni life and added individual tasks.
+                            These are tasks with deadlines (such as a coursework
+                            or dissertation), again you would prescribe a target time to complete this
+                            task. Along with this I added in an advanced feature where you could alter
+                            the time blocks you would like to work towards the target in, meaning the timer
+                            could count down from a different starting number depending on the task
+                            being completed.
+                        </p>
+                        <h2>Features</h2>
+                        <h3>Adding, deleting and editing tasks</h3>
+                        <p>
+                            Due to only writing this project in swift, with the intention of it being
+                            used for iPhones and iPads, I didn't see the need to store user data remotely
+                            as the only benefits I could see for this type of data storage were
+                            syncing between devices (which is unlikely as the code is only for one
+                            type of device), or as a fail-safe in case local data is lost (this data
+                            is likely not that important to the user). As this is not enough to justify
+                            the costs, I instead opted to store all data locally through the use of
+                            Realm as this is a relatively friendly database management system.
+                        </p>
+                        <h3>Timer</h3>
+                        <p>
+                            The challenge I found with the timer is ensuring it persists when the
+                            phone is sent to sleep or the app is sent into the background. To get around
+                            this I decided to store the timer start time in a plist as this is a small
+                            amount of data which does not need to be searched or ordered and so a
+                            database would be overkill. The use of a plist in this instance would
+                            likely also result in quicker retrieval which is important
+                            to ensure the timer has less initial lag upon re-entering the app.
+                        </p>
+                        <h3>Sorting Tasks</h3>
+                        <p>
+                            For this I used a bubble sort as this will likely be a list under 15 or
+                            so items and so the extra code complexity of a merge sort, quick sort or
+                            any other O(n log n) algorithm would not me worth the impact on code
+                            readability.
+                        </p>
+                        <h2>Tech Stack</h2>
+                        <ul>
+                            <li><b>Programming Language:</b> Swift</li>
+                            <li><b>Development Environment:</b> Xcode</li>
+                            <li><b>UI Framework:</b> SwiftUI</li>
+                            <li><b>Database:</b> Realm</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     </div>
 </body>
 
