@@ -75,8 +75,8 @@
                         <img src="./assets/wallProjections/Wall-Projections-Image.png" class="card-img-top rounded"
                             alt="Wall projections setup" style="height: 17rem; object-fit: cover;">
                         <div class="card-body">
-                            <p class="card-subtitle"><span class="badge text-bg-info text-body-secondary">Group
-                                    Project</span>
+                            <p class="card-subtitle">
+                                <span class="badge text-bg-info text-body-secondary">Group Project</span>
                                 <span class="badge text-bg-info text-body-secondary">C#</span>
                                 <span class="badge text-bg-info text-body-secondary">.NET</span>
                                 <span class="badge text-bg-info text-body-secondary">Avalonia</span>
@@ -86,7 +86,11 @@
                                 where visitors interact with 3D replicas and information
                                 about that replica is displayed
                             </p>
-                            <a href="#" class="card-link btn btn-outline-primary">More</a>
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal"
+                                data-bs-target="#wallProjectionsModal">
+                                More
+                            </button>
                             <a href="https://github.com/miloszwasacz/wall-projections"
                                 class="card-link btn btn-outline-primary">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
@@ -182,6 +186,8 @@
             </div>
         </div>
     </div>
+
+
 
 
 
@@ -304,6 +310,90 @@
                             <li><b>Development Environment:</b> Xcode</li>
                             <li><b>UI Framework:</b> SwiftUI</li>
                             <li><b>Database:</b> Realm</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+
+
+    <!-- Wall Projections Modal -->
+    <div class="modal fade" id="wallProjectionsModal" tabindex="-1" aria-labelledby="wallProjectionsModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title" id="wallProjectionsModalLabel">Wall Projections</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <p>
+                        <span class="badge text-bg-info text-body-secondary">Group Project</span>
+                        <span class="badge text-bg-info text-body-secondary">C#</span>
+                        <span class="badge text-bg-info text-body-secondary">.NET</span>
+                        <span class="badge text-bg-info text-body-secondary">Avalonia</span>
+                        </p>
+                        <p> An exhibit for Bristol Museum
+                            where visitors interact with 3D replicas and information
+                            about that replica is displayed
+                        </p>
+                        <!-- video -->
+                        <video controls class="center" style="height: 400px; object-fit: contain;">
+                            <source src="./assets/wallProjections/Workflow.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <br>
+                        <h2>Overview</h2>
+                        <p>
+                        This was a team project I did as part of my Software Engineering Project 
+                        module. As a group of 5 we split into two sections; front-end (Daniel and Sergi)
+                        and back-end (Milosz, Thomas and I). For the front-end Milosz 
+                        and I primarily worked together as this was my first 
+                        time with front-end development, and my first time working 
+                        in C# or with Avalonia. Due to this we started the project 
+                        with my code being written primarily through pair programming techniques.
+                        Alongside Milosz I coded the first iteration of the information display (for the MVP)
+                        and the layout of the projection circles (for the 2nd and final iterations).
+                        </p>
+                        <p>
+                        After some time getting used to the language I was then 
+                        tasked with doing more code individually. During this I 
+                        coded the hotspot positioning screen where hotspots could 
+                        be positioned and resized.
+                        </p>
+                        <p>
+                        After this we ran a user testing day with the second iteration 
+                        of the project. During this we let users interact with the 
+                        hotspots and gave them tasks to complete on the editor before
+                        filling out a few forms to help give us a direction for the 
+                        final iteration.
+                        </p>
+                        <p>
+                        After the testing day I once again worked alongside 
+                        Milosz to implement the requested changes found on the 
+                        testing day. For the front-end we focused on the animations for activated 
+                        hotspots. Once complete we then met with the client of a 
+                        third and final time to share out thoughts.
+                        </p>
+                        <h2>Tech Stack</h2>
+                        <ul>
+                            <li><b>Front-End</b></li>
+                            <ul>
+                                <li><b>Programming Language:</b> C#</li>
+                                <li><b>UI Framework:</b> Avalonia</li>
+                                <li><b>Framework:</b> .NET</li>
+                            </ul>
+                            <li><b>Back-End</b></li>
+                            <ul>
+                                <li><b>Programming Language:</b> Python</li>
+                                <li><b>Computer Vision Libraries:</b> OpenCV, MediaPipe</li>
+                            <li><b>Interoperability:</b> Python.NET</li>
+                            </ul>
                         </ul>
                     </div>
                 </div>
