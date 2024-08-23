@@ -52,12 +52,17 @@
                                 <span class="badge text-bg-info text-body-secondary">C#</span>
                                 <span class="badge text-bg-info text-body-secondary">.NET</span>
                                 <span class="badge text-bg-info text-body-secondary">Avalonia</span>
+                                <span class="badge text-bg-info text-body-secondary">Shell Script</span>
                             </p>
                             <h5 class="card-title">Image Sorter</h5>
-                            <p class="card-text">An Application where
+                            <p class="card-text">an Application where
                                 a collection of images can be reorganised automatically
                                 based off features within those images</p>
-                            <a href="#" class="card-link btn btn-outline-primary">More</a>
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal"
+                                data-bs-target="#imageSorterModal">
+                                More
+                            </button>
                             <a href="https://github.com/Bristol-SEP/image-sorter"
                                 class="card-link btn btn-outline-primary">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
@@ -393,6 +398,165 @@
                                 <li><b>Programming Language:</b> Python</li>
                                 <li><b>Computer Vision Libraries:</b> OpenCV, MediaPipe</li>
                             <li><b>Interoperability:</b> Python.NET</li>
+                            </ul>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+
+
+
+
+
+    <!-- Image Sorter Modal -->
+    <div class="modal fade" id="imageSorterModal" tabindex="-1" aria-labelledby="imageSorterModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title" id="imageSorterModalLabel">Image Sorter</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <p>
+                        <span class="badge text-bg-info text-body-secondary">C#</span>
+                        <span class="badge text-bg-info text-body-secondary">.NET</span>
+                        <span class="badge text-bg-info text-body-secondary">Avalonia</span>
+                        <span class="badge text-bg-info text-body-secondary">Shell Script</span>
+                        </p>
+                        <p>An Application where
+                        a collection of images can be reorganised automatically
+                        based off features within those images</p>
+                        <!-- carousel -->
+                        <!-- <div id="carousel" class="carousel slide carousel-dark bg-secondary-subtle" -->
+                        <!--     style="height: 500px;"> -->
+                        <!--     <div class="carousel-indicators"> -->
+                        <!--         <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active" -->
+                        <!--             aria-current="true" aria-label="Slide 1"></button> -->
+                        <!--         <button type="button" data-bs-target="#carousel" data-bs-slide-to="1" -->
+                        <!--             aria-label="Slide 2"></button> -->
+                        <!--         <button type="button" data-bs-target="#carousel" data-bs-slide-to="2" -->
+                        <!--             aria-label="Slide 3"></button> -->
+                        <!--         <button type="button" data-bs-target="#carousel" data-bs-slide-to="3" -->
+                        <!--             aria-label="Slide 4"></button> -->
+                        <!--         <button type="button" data-bs-target="#carousel" data-bs-slide-to="4" -->
+                        <!--             aria-label="Slide 5"></button> -->
+                        <!--     </div> -->
+                        <!--     <div class="carousel-inner"> -->
+                        <!--         <div class="carousel-item active"> -->
+                        <!--             <img src="../../assets/timedProgress/baseScreen.png" class="d-block w-100" -->
+                        <!--                 style="height: 500px; object-fit: contain;" alt="base screen"> -->
+                        <!--         </div> -->
+                        <!--         <div class="carousel-item"> -->
+                        <!--             <img src="../../assets/timedProgress/timer.png" class="d-block w-100" -->
+                        <!--                 style="height: 500px; object-fit: contain;" alt="timer"> -->
+                        <!--         </div> -->
+                        <!--         <div class="carousel-item"> -->
+                        <!--             <img src="../../assets/timedProgress/dailyTask.png" class="d-block w-100" -->
+                        <!--                 style="height: 500px; object-fit: contain;" alt="daily tasks"> -->
+                        <!--         </div> -->
+                        <!--         <div class="carousel-item"> -->
+                        <!--             <img src="../../assets/timedProgress/weeklyTask.png" class="d-block w-100" -->
+                        <!--                 style="height: 500px; object-fit: contain;" alt="weekly tasks"> -->
+                        <!--         </div> -->
+                        <!--         <div class="carousel-item"> -->
+                        <!--             <img src="../../assets/timedProgress/edit.png" class="d-block w-100" -->
+                        <!--                 style="height: 500px; object-fit: contain;" alt="edit screen"> -->
+                        <!--         </div> -->
+                        <!--     </div> -->
+                        <!--     <button class="carousel-control-prev" type="button" data-bs-target="#carousel" -->
+                        <!--         data-bs-slide="prev"> -->
+                        <!--         <span class="carousel-control-prev-icon" aria-hidden="true"></span> -->
+                        <!--         <span class="visually-hidden">Previous</span> -->
+                        <!--     </button> -->
+                        <!--     <button class="carousel-control-next" type="button" data-bs-target="#carousel" -->
+                        <!--         data-bs-slide="next"> -->
+                        <!--         <span class="carousel-control-next-icon" aria-hidden="true"></span> -->
+                        <!--         <span class="visually-hidden">Next</span> -->
+                        <!--     </button> -->
+                        <!-- </div> -->
+                        <br>
+                        <h2>Overview</h2>
+                        <p>
+                        A friend who works for a rowing photography company came across a problem
+                        when a bunch of boats set off at a race out of number order. Due 
+                        to this the photos from this race could not be split into the 
+                        usual groups of 50 that they would usually be split into. To 
+                        solve this he wanted an app which could extract the bow number 
+                        from the image and sort it into the correct folders. As someone
+                        who used to row and so had been to this photography store occasionally 
+                        I recommended that we also added in the boat code (this is a number 
+                        on the side of all boats which is used to identify a row club)
+                        this way the images could also be sorted per club making it 
+                        easier to go through these photos with your friends.
+                        </p>
+                        <p>
+                        To start this I began on the front-end since I had recently
+                        completed this on another project. For this my plan was to 
+                        split it into sections: 
+                        <ol>
+                            <li>Select features to be extracted</li>
+                            <li>Select target folder where all the images are held</li>
+                            <li>Process the images (runs the python script with the parameters given in the previous 2 sections)</li>
+                            <li>Structure the folder (deciding where each feature should impact)</li>
+                            <li>Order the folder (looks at the images metadata and reorganises the folder to the new structure via a shell script)</li>
+                        </ol>
+                        </p>
+                        <p>
+                        As this is a large project to do individually I decided to 
+                        structure it so all buttons, boxes and colours would only need 
+                        to be changed in one place. This way I could focus on delivering 
+                        a functional product first (the worse looking UI also benefits user 
+                        testing as they focus criticism less on colours and shapes and more on the core functionality
+                        as it appears to be in early stages). With this I worked through 
+                        all the bullet points above (leaving out the actual calling of the python script 
+                        as I was yet to write it). 
+                        </p>
+                        <p>
+                        Next I focused on the organising of the folders post metadata tagging.
+                        To do this I created a folder and tagged 50 photos with various 
+                        boat codes and bow numbers using a quick script so I would have test 
+                        data for this task. To sort the photos I decided to use a shell 
+                        script as it seemed like the logical language for desktop iteration.
+                        </p>
+                        <p>
+                        My final task is the back-end and the feature extraction, this 
+                        will be difficult as some images will cut out these features. Due 
+                        to this I plan to run two scripts concurrently. The first script will 
+                        attempt to extract these features from as many images as possible 
+                        then the second script will extrapolate using the order of images 
+                        and the colours within the images (boats vary in colour and so 
+                        do the kit per club). This is where I am currently up to 
+                        in this project.                         
+                        </p>
+                        <p>
+                        Initially this was meant to be a group project 
+                        with the other two people working on the back-end of the project. 
+                        However, due to them having not started this at the point of 
+                        me finishing the entire front-end I have decided to remove them.
+                        </p>
+                        <h2>Tech Stack</h2>
+                        <ul>
+                            <li><b>Front-End</b></li>
+                            <ul>
+                                <li><b>Programming Language:</b> C#</li>
+                                <li><b>UI Framework:</b> Avalonia</li>
+                                <li><b>Framework:</b> .NET</li>
+                            </ul>
+                            <li><b>Back-End</b></li>
+                            <ul>
+                                <li><b>Programming Language:</b> Python</li>
+                                <li><b>Interoperability:</b> Python.NET</li>
+                            </ul>
+                            <li>Automation</li>
+                            <ul>
+                                <li><b>Folder Sorting:</b> Shell Script</li>
                             </ul>
                         </ul>
                     </div>
