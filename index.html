@@ -677,6 +677,33 @@
                         </div>
                         <br>
                         <h2>Overview</h2>
+                        <p>
+                        This application was split into two sections; the ANPR system
+                        and the web app. For the ANPR system it would read the number plate 
+                        then look at the database to see if it was present. If it 
+                        was it would then open the gate and add to the entries table 
+                        the time, plate and company who entered. 
+                        </p>
+                        <p>
+                        On the web app side there was a primary user page where the owner of the entire
+                        unit site would log in and could add/remove companies or number plates 
+                        for those companies. Along with this the primary user could 
+                        also open the gate from the app and view all details such as 
+                        which number plates are for which companies and all the entries to the site. 
+                        For the secondary users they could only request new number plates 
+                        and open the gate from the app.
+                        </p>
+                        <h2>Features</h2>
+                        <h3>Reading Number Plates</h3>
+                        <p>
+                        To read the number plate the system would first search for 
+                        a car using tiny YOLO. If found it would crop the image 
+                        to the bounding box of the car using Matplotlib then use OpenCV to grey scale it 
+                        before searching for rectangles. When a rectangle was found 
+                        it would then crop the image a second time so it is only 
+                        the number plate. After this it would save the image and call the 
+                        Pytesseract to read from this image, extracting the number plate.
+                        </p>
                         <h2>Tech Stack</h2>
                         <ul>
                             <li><b>Automatic Number Plate Recognition (ANPR)</b></li>
