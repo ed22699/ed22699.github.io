@@ -82,6 +82,14 @@
     \vspace{-2.4mm}
 }
 
+\newcommand{\resumeBasicSubheading}[1]{
+\vspace{0.5mm}\item
+    \begin{tabular*}{0.98\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{#1}
+    \end{tabular*}
+    \vspace{-2.4mm}
+}
+
 \newcommand{\resumeProject}[4]{
 \vspace{0.5mm}\item
     \begin{tabular*}{0.98\textwidth}[t]{l@{\extracolsep{\fill}}r}
@@ -148,10 +156,11 @@
 \section{\textbf{Education}}
   \resumeSubHeadingListStart
     \resumeSubheading
-      {University of Bristol}{Average Percentage: 72}
+      {University of Bristol}{Average Percentage: 74}
       {Computer Science MEng}{2022-date}
       \resumeItemListStart
-      \item{Relevant modules: xxx}
+      \item{Relevant modules: Software Engineering Project (77), Imperative and Functional Programming (73), Object Oriented Programming and Algorithms 1 (76),
+           Algorithms 2 (75)}
       \item{Competed in the 2023 BrisHack 24-hour Hackathon in a team of 5}
       \resumeItemListEnd
     \resumeSubheading
@@ -167,82 +176,75 @@
 \vspace{-5.5mm}
 %
 
-%-----------PROJECTS-----------------
-\section{\textbf{Personal Projects}}
+%-----------KEY SKILLS-----------------
+\section{\textbf{Key Skills}}
 \resumeSubHeadingListStart
 
-    \resumeProject
-      {Project Name} %Project Name
-      {Project description(Your input in the project)} %Project Name, Location Name
-      {Event dates} %Event Dates
+    \resumeBasicSubheading
+    {Programming} %Skill Name
 
       \resumeItemListStart
-        \item {Tools \& technologies used: xxx,xxx}
-        \item {More description on the project(The output you achieved by working on the project)}
+  \item {\textbf{C\#:} I have created two large projects in this language, 
+            both for an end client with one being completed in a team of 5. 
+            These projects utilized tools such as unit tests and CI/CD, 
+        along with frameworks such as .NET and the UI framework Avalonia}
+    \item {\textbf{Python:} For my A level project I created an ANPR gate system for a site 
+            which could also be accessed via a web server. This utilized libraries such 
+        as OpenCV, Matplotlib and Pytesseract to extract number plates and PHP with MySQL
+    to alter these valid number plates in the database}
+    \item {\textbf{Swift:} Created an iOS app where a user could set a time per 
+        week variable for a task and work towards it. This utilized Realm to manage 
+    the database}
+    \item {\textbf{C:} Created software which could convert SK files into images 
+        and run a lossless compression on the SK}
+    \item {\textbf{Java:} Worked in a pair to create a Scotland Yard Board game 
+        AI bots that utilized the Monte Carlo Tree Search algorithm}
+    \item {\textbf{Go:} Worked in a pair to create a GOL simulation which could 
+        either utilize multiple cores of the computer or multiple AWS servers to 
+    concurrently render each move of the simulation}
     \resumeItemListEnd
     \vspace{-2.0mm}
     
-    \resumeProject
-      {Project Name} %Project Name
-      {Project description(Your input in the project)} %Project Name, Location Name
-      {Event dates} %Event Dates
-
-      \resumeItemListStart
-        \item {Tools \& technologies used: xxx,xxx}
-        \item {More description on the project(The output you achieved by working on the project)}
+   \resumeBasicSubheading
+   {Problem-Solving}
+   \resumeItemListStart
+\item {I have worked in problem-solving situations both within technology and 
+    the real world, with my most recent example being an exhibition pre-build and 
+setup in ExCel London, where we built the only round exhibition through locking 
+in floor tiles to the walls frame so that they would form curves}
+   \resumeItemListEnd
+    \vspace{-2.0mm}
+   \resumeBasicSubheading {Time Management}
+   \resumeItemListStart
+\item{Alongside my degree and A-levels, up until recently, I have also spent 
+    the past 7 years rowing 10 times a week which has led me to becoming good with 
+time management}
+\item{Alongside first year studies I also completed a Swift boot camp and read 
+    5 books from the pragmatic bookshelf during my second year studies to further
+develop my knowledge of languages and software tools}
+   \resumeItemListEnd
+    \vspace{-2.0mm}
+    \resumeBasicSubheading{Leadership and Communication}
+    \resumeItemListStart
+\item{Helped organize a 24-hour walk for Help for Heroes, where we raised £500}
+\item{During A-levels I volunteered coaching kids rowing on the weekends}
     \resumeItemListEnd
     \vspace{-2.0mm}
-    
-      
   \resumeSubHeadingListEnd
 \vspace{-5.5mm}
 
 
-
-%-----------Technical skills-----------------
-\section{\textbf{Technical Skills and Interests}}
- \begin{itemize}[leftmargin=0.1in, label={}]
-    \small{\item{
-     \textbf{Technical Skills}{: } \\
-     \textbf{Soft Skills}{: } \\
-     \textbf{Field of Interest}{: } \\
-     \textbf{Hobbies}{: } \\
-    }}
- \end{itemize}
- \vspace{-16pt}
-
-
-
-%-----------Positions of Responsibility-----------------
-\section{\textbf{Positions of Responsibility}}
+%-----------INTERESTS-----------------
+\section{\textbf{Interests}}
 \vspace{-0.4mm}
 \resumeSubHeadingListStart
-\resumePOR{Position, } % Position
-    {Club or Event} %Club,Event
-    {Position tenure} %Tenure Period
-    -work description in 1 line
-\resumePOR{Position, } % Position
-    {Club or Event} %Club,Event
-    {Position tenure} %Tenure Period
--work description in 1 line
+\resumePOR{C2 World's Longest Tandem Row: } % Award
+    {7 days straight, rowing over 1,100,000m} % Event
+    {2020} %Event Year
     
-\resumeSubHeadingListEnd
-\vspace{-5mm}
-
-
-
-
-%-----------Achievements-----------------
-\section{\textbf{Achievements}}
-\vspace{-0.4mm}
-\resumeSubHeadingListStart
-\resumePOR{Achievement } % Award
-    {description} % Event
-    {Event dates} %Event Year
-    
-\resumePOR{Achievement } % Award
-    {description} % Event
-    {Event dates} %Event Year
+\resumePOR{Rowed at Henley Royal Regatta: } % Award
+    {Represented both my school and university} % Event
+    {2021-2023} %Event Year
 \resumeSubHeadingListEnd
 \vspace{-5mm}
 
