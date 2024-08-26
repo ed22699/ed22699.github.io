@@ -110,6 +110,27 @@
                 </div>
                 <div class="col">
                     <div class="card text-bg-light shadow-sm ">
+                        <img src="./assets/GOL/GOL.jpeg" class="card-img-top rounded"
+                            alt="GOL example" style="height: 17rem; object-fit: cover;">
+                        <div class="card-body">
+                            <p class="card-subtitle">
+                                <span class="badge text-bg-info text-body-secondary">Go</span>
+                                <span class="badge text-bg-info text-body-secondary">AWS Servers</span>
+                            </p>
+                            <h5 class="card-title">Conway's Game Of Life</h5>
+                            <p class="card-text">A game of life modal that processes 
+                            each round concurrently either via the computers cores
+                            or via multiple servers</p>
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal"
+                                data-bs-target="#GOLModal">
+                                More
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card text-bg-light shadow-sm ">
                         <img src="./assets/timedProgress/photo-collage.png" class="card-img-top rounded"
                             alt="Base screen of app" style="height: 17rem; object-fit:scale-down;">
                         <div class="card-body">
@@ -353,6 +374,55 @@
         </div>
     </div>
     </div>
+
+
+
+
+    <!-- GOL Modal -->
+    <div class="modal fade" id="GOLModal" tabindex="-1" aria-labelledby="GOLModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title" id="GOLModalLabel">Timed Progress</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <p>
+                        <span class="badge text-bg-info text-body-secondary">Go</span>
+                        <span class="badge text-bg-info text-body-secondary">AWS Servers</span>
+                        </p>
+                        <p class="text-body-secondary">A game of life modal that processes 
+                            each round concurrently either via the computers cores
+                            or via multiple servers</p>
+                        <br>
+                        <h2>Overview</h2>
+                        <p>
+                        This is a coursework for the Computer Systems A module. 
+                        For this you are given the skeleton code to help you implement 
+                        a sequential GOL model. After this you utilize threads to 
+                        process the model on multiple cores through splitting the 
+                        image into strips. After this you are tasked with creating 
+                        another implementation, however, this time via servers.
+                        </p>
+                        <p>
+                        Note, due to this being a current university coursework
+                        I am unable to make this repository public.
+                        </p>
+                        <h2>Features</h2>
+                        <h2>Tech Stack</h2>
+                        <ul>
+                            <li><b>Programming Language:</b> Go</li>
+                            <li><b>Infrastructure: </b> AWS Servers</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
 
 
 
