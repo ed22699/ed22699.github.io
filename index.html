@@ -191,7 +191,7 @@
                 </div>
                 <div class="col">
                     <div class="card text-bg-light shadow-sm ">
-                        <img src="./assets/rowingRecord/mainPage.png" class="card-img-top rounded"
+                        <img src="./assets/rowingRecord/thumbnail.png" class="card-img-top rounded"
                             alt="Base screen of app" style="height: 17rem; object-fit:cover;">
                         <div class="card-body">
                             <p class="card-subtitle">
@@ -827,73 +827,60 @@
 
 
 
-    <!-- ANPR Gate Modal -->
-    <div class="modal fade" id="ANPRGateModal" tabindex="-1" aria-labelledby="ANPRGateModalLabel"
+    <!-- Rowing Record Modal -->
+    <div class="modal fade" id="rowingRecordModal" tabindex="-1" aria-labelledby="rowingRecordModalLabel"
         aria-hidden="true">
         <div class="modal-dialog modal-lg modal-dialog-scrollable">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h1 class="modal-title" id="ANPRGateModalLabel">ANPR Gate</h1>
+                    <h1 class="modal-title" id="rowingRecordModalLabel">Rowing Record</h1>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
                     <div class="container-fluid">
                         <p>
                             <span class="badge text-bg-info text-body-secondary">Python</span>
-                            <span class="badge text-bg-info text-body-secondary">HTML/CSS/JavaScript</span>
-                            <span class="badge text-bg-info text-body-secondary">PHP</span>
-                            <span class="badge text-bg-info text-body-secondary">MySQL</span>
                         </p>
-                        <p class="text-body-secondary">An ANPR system for automatically 
-                            opening gates at a rental unit site. Has the ability to add and 
-                            remove companies as well as log all entries</p>
+                        <p class="text-body-secondary">A UI used to help log my world 
+                            record into a database to be submitted as evidence of 
+                            completion</p>
                         <!-- carousel -->
-                        <div id="ANPRcarousel" class="carousel slide carousel-dark bg-secondary-subtle"
+                        <div id="rowingcarousel" class="carousel slide carousel-dark bg-secondary-subtle"
                             style="height: 500px;">
                             <div class="carousel-indicators">
-                                <button type="button" data-bs-target="#ANPRcarousel" data-bs-slide-to="0" class="active"
+                                <button type="button" data-bs-target="#rowingcarousel" data-bs-slide-to="0" class="active"
                                     aria-current="true" aria-label="Slide 1"></button>
-                                <button type="button" data-bs-target="#ANPRcarousel" data-bs-slide-to="1"
+                                <button type="button" data-bs-target="#rowingcarousel" data-bs-slide-to="1"
                                     aria-label="Slide 2"></button>
-                                <button type="button" data-bs-target="#ANPRcarousel" data-bs-slide-to="2"
+                                <button type="button" data-bs-target="#rowingcarousel" data-bs-slide-to="2"
                                     aria-label="Slide 3"></button>
-                                <button type="button" data-bs-target="#ANPRcarousel" data-bs-slide-to="3"
+                                <button type="button" data-bs-target="#rowingcarousel" data-bs-slide-to="3"
                                     aria-label="Slide 4"></button>
-                                <button type="button" data-bs-target="#ANPRcarousel" data-bs-slide-to="4"
-                                    aria-label="Slide 5"></button>
                             </div>
                             <div class="carousel-inner">
                                 <div class="carousel-item active">
-                                    <video controls class="d-block w-100" style="height: 400px; object-fit: contain;">
-                                        <source src="./assets/gateProject/NumberPlateOpen.mov" type="video/mp4">
-                                        Your browser does not support the video tag.
-                                    </video>
-                                </div>
-                                <div class="carousel-item">
-                                    <video controls class="d-block w-100" style="height: 400px; object-fit: contain;">
-                                        <source src="./assets/gateProject/AppOpen.mov" type="video/mp4">
-                                        Your browser does not support the video tag.
-                                    </video>
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="./assets/gateProject/pages.jpg" class="d-block w-100"
+                                    <img src="./assets/rowingRecord/mainPage.png" class="d-block w-100"
                                         style="height: 500px; object-fit: contain;" alt="user home pages">
                                 </div>
                                 <div class="carousel-item">
-                                    <img src="./assets/gateProject/logins.jpg" class="d-block w-100"
-                                        style="height: 500px; object-fit: contain;" alt="entries page">
+                                    <img src="./assets/rowingRecord/addUsers.png" class="d-block w-100"
+                                        style="height: 500px; object-fit: contain;" alt="user home pages">
                                 </div>
                                 <div class="carousel-item">
-                                    <img src="./assets/gateProject/companies.jpg" class="d-block w-100"
-                                        style="height: 500px; object-fit: contain;" alt="companies page">
+                                    <img src="./assets/rowingRecord/notes.png" class="d-block w-100"
+                                        style="height: 500px; object-fit: contain;" alt="user home pages">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="./assets/rowingRecord/certificate.png" class="d-block w-100"
+                                        style="height: 500px; object-fit: contain;" alt="user home pages">
                                 </div>
                             </div>
-                            <button class="carousel-control-prev" type="button" data-bs-target="#ANPRcarousel"
+                            <button class="carousel-control-prev" type="button" data-bs-target="#rowingcarousel"
                                 data-bs-slide="prev">
                                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                                 <span class="visually-hidden">Previous</span>
                             </button>
-                            <button class="carousel-control-next" type="button" data-bs-target="#ANPRcarousel"
+                            <button class="carousel-control-next" type="button" data-bs-target="#rowingcarousel"
                                 data-bs-slide="next">
                                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                                 <span class="visually-hidden">Next</span>
@@ -901,48 +888,26 @@
                         </div>
                         <br>
                         <h2>Overview</h2>
-                        <p>
-                        This application was split into two sections; the ANPR system
-                        and the web app. For the ANPR system it would read the number plate 
-                        then look at the database to see if it was present. If it 
-                        was it would then open the gate and add to the entries table 
-                        the time, plate and company who entered. 
-                        </p>
-                        <p>
-                        On the web app side there was a primary user page where the owner of the entire
-                        unit site would log in and could add/remove companies or number plates 
-                        for those companies. Along with this the primary user could 
-                        also open the gate from the app and view all details such as 
-                        which number plates are for which companies and all the entries to the site. 
-                        For the secondary users they could only request new number plates 
-                        and open the gate from the app.
-                        </p>
-                        <h2>Features</h2>
-                        <h3>Reading Number Plates</h3>
-                        <p>
-                        To read the number plate the system would first search for 
-                        a car using tiny YOLO. If found it would crop the image 
-                        to the bounding box of the car using Matplotlib then use OpenCV to grey scale it 
-                        before searching for rectangles. When a rectangle was found 
-                        it would then crop the image a second time so it is only 
-                        the number plate. After this it would save the image and call the 
-                        Pytesseract to read from this image, extracting the number plate.
-                        </p>
+                        During the covid year there wasn't much to do so a friend and I 
+                        decided to attempt a rowing world record and row for more than 
+                        5 days straight. To verify this you had to have both a witness 
+                        and a log. This log had to show when each person on the machine
+                        swapped over, the distance they had completed and had to ensure 
+                        the workload was no higher than 
+                        40:60 between the athletes. Due to rowing machines not  typically 
+                        being used for such distances they had a pre-built 
+                        reset at 50,000 meters. This would make calculating the 
+                        distance per interval and the overall ratio challenging 
+                        due to the sleep deprivation. To solve this I decided to 
+                        program a GUI where we could enter just the distance the machine 
+                        read at the time of the swap and the intervals time and the 
+                        rest would be calculated, displayed for us and written to a 
+                        database to be used as proof.
                         <h2>Tech Stack</h2>
                         <ul>
-                            <li><b>Automatic Number Plate Recognition (ANPR)</b></li>
-                            <ul>
-                                <li><b>Hardware: </b> Raspberry Pi, Raspberry Pi Camera</li>
-                                <li><b>Programming Language: </b> Python</li>
-                                <li><b>Libraries: </b> OpenCV, Pytesseract, Numpy, Matplotlib, imutils, PLI</li>
-                            </ul>
-                            <li><b>Web Server</b></li>
-                            <ul>
-                                <li><b>Server: </b> Apache 2</li>
-                                <li><b>Front-End Technologies</b> HTML, CSS, JavaScript</li>
-                                <li><b>Back-End Language: </b> PHP</li>
-                                <li><b>Database: </b> MySQL</li>
-                            </ul>
+                            <li><b>Programming Language: </b> Python</li>
+                            <li><b>UI Framework: </b> Tkinter</li>
+                            <li><b>Database: </b> SQLite3</li>
                         </ul>
                     </div>
                 </div>
