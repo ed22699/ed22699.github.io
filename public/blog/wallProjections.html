@@ -38,91 +38,122 @@
             <h1>An interactive exhibit for the Bristol Museum</h1>
             <h2>By University of Bristol Computer Science student team: Sonny, Sergi, Thomas, Daniel and Milosz</h2>
         </div>
-        
+
         <div class="row w-100">
             <video controls class="center" style="height: 400px; object-fit: contain;">
                 <source src="../../assets/wallProjections/Workflow.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
         </div>
+        <br>
         <p>
-        Back in September five of us gathered round a table thinking about the prompt
-        given to us by Bristol Museum: develop an interactive exhibit where visitors
-        touch replicas of artefacts and related information appears, creating an
-        interesting and fun way to learn about these objects.
+            Back in September five of us gathered round a table thinking about the prompt
+            given to us by Bristol Museum: develop an interactive exhibit where visitors
+            touch replicas of artefacts and related information appears, creating an
+            interesting and fun way to learn about these objects.
         </p>
         <p>
-        After many months and iterations, we finally came to the design you see
-        above, an exhibit consisting hotspots over the replicas on a table. When
-        the hotspots are touched, information about each artifact is displayed.
+            After many months and iterations, we finally came to the design you see
+            above, an exhibit consisting hotspots over the replicas on a table. When
+            the hotspots are touched, information about each artifact is displayed.
         </p>
         <p>
-        But how did we get here? With little idea on how to tackle such a task we
-        split it into the three logical sections: how do people interact with the
-        replicas? How do we display the information? How do we make it easy for
-        museum staff to use in future exhibitions?
+            But how did we get here? With little idea on how to tackle such a task we
+            split it into the three logical sections: how do people interact with the
+            replicas? How do we display the information? How do we make it easy for
+            museum staff to use in future exhibitions?
         </p>
         <h3>How do people interact with the replicas?</h3>
         <p>
-        This was tough as we didn't have any examples to work off - we couldn't
-        find anyone who'd done something similar.
+            This was tough as we didn't have any examples to work off - we couldn't
+            find anyone who'd done something similar.
         </p>
         <p>
-        We explored many possible solutions; looking at methods such as computer
-        vision, lasers and detecting decreases in light. Through our exploration we
-        ultimately settled on MediaPipe; an AI-powered hand tracking model which
-        allowed us to see how users touched the replicas.
+            We explored many possible solutions; looking at methods such as computer
+            vision, lasers and detecting decreases in light. Through our exploration we
+            ultimately settled on MediaPipe; an AI-powered hand tracking model which
+            allowed us to see how users touched the replicas.
         </p>
         <div class="row w-100">
             <img src="/assets/wallProjections/Picture1.png" alt="Image of how hotspots are selected" class="center"
-            style="height: 150px; object-fit: contain;">
+                style="height: 150px; object-fit: contain;">
         </div>
         <p>
-        We created hotspots in which the replicas could be placed and animations
-        to prompt visitors to interact.
+            We created hotspots in which the replicas could be placed and animations
+            to prompt visitors to interact.
         </p>
         <p>
-        While two of us worked on this, the rest of the team was busy creating a
-        user interface, so users could engage with the exhibition.
+            While two of us worked on this, the rest of the team was busy creating a
+            user interface, so users could engage with the exhibition.
         </p>
         <h3>How do we display the information?</h3>
         <p>
-        This was a simpler task; the museum had informed us that they wanted
-        to use projectors to show this information, so we created a dynamic
-        display with a black background and white text to make it less blocky
-        and more appealing to the eye. After a few iterations with museum staff
-        and user feedback we came to the structure shown. Videos, image
-        slideshows and text can all be included.
+            This was a simpler task; the museum had informed us that they wanted
+            to use projectors to show this information, so we created a dynamic
+            display with a black background and white text to make it less blocky
+            and more appealing to the eye. After a few iterations with museum staff
+            and user feedback we came to the structure shown. Videos, image
+            slideshows and text can all be included.
         </p>
         <div class="row w-100">
             <img src="/assets/wallProjections/Picture2.png" alt="Image of model display screen" class="center"
-            style="height: 200px; object-fit: contain;">
+                style="height: 200px; object-fit: contain;">
         </div>
         <br>
         <h3>How do we make it easy for museum staff to use in future exhibitions?</h3>
         <p>
-        We wanted to create an easy-to-use system with equipment most museums
-        would already have.
+            We wanted to create an easy-to-use system with equipment most museums
+            would already have.
         </p>
         <p>
-        A projector displays hotspots and a camera detects when people touch
-        them. The camera and projector can be calibrated with the click of
-        a button. A second projector displays information, which changes
-        according to how the users interact with the hotspots.
+            A projector displays hotspots and a camera detects when people touch
+            them. The camera and projector can be calibrated with the click of
+            a button. A second projector displays information, which changes
+            according to how the users interact with the hotspots.
         </p>
         <p>
-        We also designed an editor allowing staff to add, remove and position
-        the hotspots, and attach relevant information to them. We added import
-        and export features, so the design can be used on different machines.
+            We also designed an editor allowing staff to add, remove and position
+            the hotspots, and attach relevant information to them. We added import
+            and export features, so the design can be used on different machines.
         </p>
         <h3>Conclusion</h3>
         <p>
-        Overall this was a fun project to work on. We learnt a lot
-        about computer vision, hardware, frontend development and
-        working as a team on a larger project. We are grateful for Bristol
-        Museum for coming to us with such an interesting
-        task and are looking forward to seeing this software in action.
+            Overall this was a fun project to work on. We learnt a lot
+            about computer vision, hardware, frontend development and
+            working as a team on a larger project. We are grateful for Bristol
+            Museum for coming to us with such an interesting
+            task and are looking forward to seeing this software in action.
         </p>
+
+        <footer class="d-flex flex-wrap justify-content-center align-items-center py-3 my-4 border-top">
+            <h3 class="text-body-secondary text-center col-12 pb-3">Contact Me</h3>
+            <ul class="nav col-12 justify-content-center list-unstyled d-flex">
+                <li class="ms-3"><a class="text-body-secondary" href="https://www.linkedin.com/in/sonnycoop">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                            class="bi bi-linkedin" viewBox="0 0 16 16">
+                            <path
+                                d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z">
+                            </path>
+                        </svg>
+                    </a></li>
+                <li class="ms-3"><a class="text-body-secondary" href="https://www.facebook.com/sonny.cooper.92560/">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                            class="bi bi-facebook" viewBox="0 0 16 16">
+                            <path
+                                d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951">
+                            </path>
+                        </svg>
+                    </a></li>
+                <li class="ms-3"><a class="text-body-secondary" href="mailto: sonnykidd@icloud.com">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                            class="bi bi-envelope" viewBox="0 0 16 16">
+                            <path
+                                d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z">
+                            </path>
+                        </svg>
+                    </a></li>
+            </ul>
+        </footer>
     </div>
 
 
