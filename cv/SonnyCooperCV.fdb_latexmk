@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1724707529.34127 "SonnyCooperCV.tex" "SonnyCooperCV.pdf" "SonnyCooperCV" 1724707530.61643 0
+["pdflatex"] 1755256886.55442 "SonnyCooperCV.tex" "SonnyCooperCV.pdf" "SonnyCooperCV" 1755256888.37965 0
   "/Users/ed22699/Library/texlive/2024basic/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrb1000.600pk" 1719660793.63067 23072 b1e8ad848a2b07d8377b98e92e0e8068 ""
   "/Users/ed22699/Library/texlive/2024basic/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrb1095.600pk" 1719660796.04158 26196 6a53e37a7bc22843037a470e88ae6d30 ""
   "/Users/ed22699/Library/texlive/2024basic/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrb1440.600pk" 1719660797.89722 36400 7a2608f6e494d66e28701ab3d82af087 ""
@@ -247,9 +247,9 @@
   "/usr/local/texlive/2024basic/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1719653885.57982 95179 16ae05f7fb71c1b90bf7b72afa571bcc ""
   "/usr/local/texlive/2024basic/texmf-var/web2c/pdftex/pdflatex.fmt" 1716481951 7536482 fc1802957ca98dfc183956472c708910 ""
   "/usr/local/texlive/2024basic/texmf.cnf" 1710011638 628 8b896f7d9d41b43f4346b9091e52171f ""
-  "SonnyCooperCV.aux" 1724707530.44408 630 38b133e7773dff4bf4e19b3616a159cc "pdflatex"
-  "SonnyCooperCV.out" 1724707530.44793 355 7ea02dd2c70cb7f078c779727f8bec8d "pdflatex"
-  "SonnyCooperCV.tex" 1724707528.56298 8184 5deaf3f3dbaeeeeadce816a8c85ae157 ""
+  "SonnyCooperCV.aux" 1755256888.12255 630 38b133e7773dff4bf4e19b3616a159cc "pdflatex"
+  "SonnyCooperCV.out" 1755256888.12695 355 7ea02dd2c70cb7f078c779727f8bec8d "pdflatex"
+  "SonnyCooperCV.tex" 1755256885.06743 8714 a5bf9b821c40513d97c843e30108a405 ""
   (generated)
   "SonnyCooperCV.aux"
   "SonnyCooperCV.log"

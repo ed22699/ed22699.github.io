@@ -20,6 +20,10 @@
 \usepackage{graphicx}
 \usepackage{cfr-lm}
 \usepackage[T1]{fontenc}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=false,
+    }
 \setlength{\footskip}{4.08003pt} 
 \pagestyle{fancy}
 \fancyhf{} % clear all header and footer fields
@@ -128,7 +132,7 @@
 %%%%%%  CV STARTS HERE  %%%%%%%%%%%
 %%%%%% DEFINE ELEMENTS HERE %%%%%%%
 \newcommand{\name}{Sonny Cooper} % Your Name
-\newcommand{\phone}{7554696882}
+\newcommand{\phone}{07554696882}
 \newcommand{\emaila}{sonnykidd@icloud.com}
 
 
@@ -159,9 +163,10 @@
       {University of Bristol}{Average Percentage: 74}
       {Computer Science MEng}{2022-date}
       \resumeItemListStart
-      \item{Relevant modules: Software Engineering Project (77), Imperative and Functional Programming (73), Object Oriented Programming and Algorithms 1 (76),
-           Algorithms 2 (75)}
+      \item{Relevant modules: Software Engineering Project (77), Machine Learning (77), Object Oriented Programming and Algorithms 1 (76),
+           Algorithms 2 (75), Advanced Algorithms (80)}
       \item{Competed in the 2023 BrisHack 24-hour Hackathon in a team of 5}
+      \item{Competed in the unitaryHACK 2025 open source quantum Hackathon in a team of 2}
       \resumeItemListEnd
     \resumeSubheading
       {Norwich School}{Results: A*A*A*A}
@@ -177,23 +182,29 @@
 %
 \section{\textbf{Projects}}
 \resumeItemListStart
-  \item {\textbf{C\#:} Designed two large projects for end clients with one developed in a team of 5. 
-            These projects incorporated tools such as unit tests and CI/CD, 
-        along with frameworks such as .NET and the UI framework Avalonia}
-    \item {\textbf{Python:} Created an ANPR gate system for a working site 
-            with a web server for the client to add users. This used libraries such 
-        as OpenCV, Matplotlib and Pytesseract to extract number plates and PHP with MySQL
-    to alter these valid number plates in the database}
-    \item {\textbf{Swift:} Developed an iOS app where a user could set a time per 
-        week variable for a task and work towards that goal. This implemented Realm to manage 
-    the database}
-    \item {\textbf{C:} Built software which could convert SK files into images 
-        and run a lossless compression on the SK}
-    \item {\textbf{Java:} As a pair, implemented a Scotland Yard Board game 
-        with AI bots that co-ordinated moves via the Monte Carlo Tree Search algorithm}
-    \item {\textbf{Go:} As a pair, created a GOL simulation which could 
-        either utilize cores of the computer or AWS servers to 
-    concurrently render each move of the simulation}
+\item {\textbf{C\#}}
+        \begin{itemize}
+            \item Developed an interactive exhibit for Bristol Museum as part of a team of 5, utilising .NET and Avalonia frameworks, alongside implementing unit tests and CI/CD practices
+            \item Directed a team of 6, developing a game utilising the Unity game engine over the course of 12 weeks for a day event where over 200 users played the game
+        \end{itemize}
+    \item {\textbf{Python}}
+        \begin{itemize}
+            \item Created an ANPR gate system for an industrial park with a web server for the owner to add users. This used OpenCV, Matplotlib and Pytesseract to extract number plates and PHP with MySQL to alter number plates in the database
+            \item Introduced documentation for the open source quantum circuit optimisation repository PYZX
+            \item Trained a transformer model with a recall of 0.75 and AUC of 0.74, and a LightGBM model with a recall 0.82 and AUC 0.9 to predict sepsis probability from medical features in real time
+        \end{itemize}
+    \item {\textbf{Swift}}
+        \begin{itemize}
+            \item Developed \href{https://headwayapp.org/}{Headway}, a task time management app which implemented Realm to manage data and Firebase to manage feedback
+        \end{itemize}
+    \item {\textbf{Java}}
+        \begin{itemize}
+            \item As a pair, implemented a Scotland Yard Board game with AI bots that co-ordinated moves via the Monte Carlo Tree Search algorithm
+        \end{itemize}
+    \item {\textbf{Go}}
+        \begin{itemize}
+            \item  As a pair, created a GOL simulation which could either utilize cores of the computer or AWS servers to concurrently render each move of the simulation
+        \end{itemize}
 \resumeItemListEnd
 
 %-----------KEY SKILLS-----------------
@@ -202,23 +213,20 @@
    \resumeBasicSubheading
    {Problem-Solving}
    \resumeItemListStart
-\item {Developed an exhibition pre-build and setup in ExCel London with one other,
-       creating the only round exhibition through locking 
-in floor tiles to the walls frame to form curves}
+\item {Prepared exhibition pre-builds and worked on site building set-ups for ExCel London and SEC Glasgow with one other}
    \resumeItemListEnd
     \vspace{-2.0mm}
    \resumeBasicSubheading {Time Management}
    \resumeItemListStart
-\item{Up until recently, spent the past 7 years rowing 10 times a week 
+\item{Spent the past 7 years rowing 10 times a week 
         alongside studies leading to better time management}
-\item{Alongside first year studies, completed a Swift boot camp and read 
-    5 books from the pragmatic bookshelf during second year studies to further
-develop knowledge of languages and software tools}
+\item{Authored an app to track the time spent on tasks to better time management}
    \resumeItemListEnd
     \vspace{-2.0mm}
     \resumeBasicSubheading{Leadership and Communication}
     \resumeItemListStart
 \item{Planned and directed a 24-hour walk for Help for Heroes, raising £500}
+\item{Was project manager of a group of 6 for a 12-week game project}
 \item{During A-levels, volunteered as a coach on weekends to teach kids how to row}
     \resumeItemListEnd
     \vspace{-2.0mm}
