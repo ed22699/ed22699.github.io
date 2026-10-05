@@ -89,8 +89,8 @@
                 <div class="navbar-nav">
                     <a class="nav-link" href="#about">About</a>
                     <a class="nav-link" href="#projects">Projects</a>
-                    <a class="nav-link" href="#blog">Blog</a>
-                    <a class="nav-link" href="./cv/SonnyCooperCV.pdf">CV</a>
+                    <a class="nav-link" href="#opensource">Open Source</a>
+                    <a class="nav-link" href="./cv/SonnyCooperAcademicCV.pdf">CV</a>
                 </div>
             </div>
         </div>
@@ -98,14 +98,107 @@
     <!-- content -->
     <div data-bs-spy="scroll" data-bs-target="#navbar" data-bs-smooth-scroll="true" class="container">
         <!-- About section -->
-        <h1 id="about">Sonny Cooper</h1>
-        <h2>Forth year computer science MEng student studying
-            at University of Bristol</h2>
+        <div class="d-flex justify-content-between align-items-start gap-4 mb-4 pt-3">
+            <div>
+                <h1 id="about" class="mb-2">Sonny Cooper</h1>
+                <h2 class="h4 text-body-secondary fw-normal">
+                    PhD candidate at University of Bristol researching Video Moment Retrieval tasks 
+                    as part of the MaVi group
+                </h2>
+            </div>
+            <div class="flex-shrink-0">
+                <img src="./assets/Cooper_Sonny.jpeg" 
+                     alt="Sonny Cooper"
+                     class="rounded-circle shadow-sm img-fluid"
+                     style="width: 150px; height: 150px; object-fit: cover;">
+            </div>
+        </div>
         <br>
+        <!-- Open Source Section -->
+        <div>
+            <h1 id="opensource">Open Source Contributions</h1>
+            <div class"row row-cols-1">
+                <div class="col">
+                    <div
+                            class="row g-0 border rounded overflow-hidden flex-md-row mb-3 shadow-sm h-md-250 position-relative align-items-center card">
+                        <div class="col-auto d-none d-md-block " style="height: 10rem;">
+                            <img src="./assets/pr/hf.png" alt="HuggingFace logo"
+                                                                      style="width: 15rem; height:100%; object-fit: contain;" class="img-thumbnail ">
+                        </div>
+                        <div class="col p-4 d-flex flex-column position-static">
+                            <h3 class="mb-0">NomicBERT model - HuggingFace/Transformers</h3>
+                            <div class="mb-1 text-body-secondary">2 April 2026</div>
+                            <p class="card-text mb-auto">Internalised NomicBERT 
+                            model for the HuggingFace/Transformers repository</p>
+                            <a href="https://github.com/huggingface/transformers/pull/43067" class="icon-link gap-1 icon-link-hover stretched-link">
+                                View PR
+                                <svg class="bi">
+                                    <use xlink:href="#chevron-right"></use>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div
+                            class="row g-0 border rounded overflow-hidden flex-md-row mb-3 shadow-sm h-md-250 position-relative align-items-center card">
+                        <div class="col-auto d-none d-md-block " style="height: 10rem;">
+                            <img src="./assets/pr/pyzx.png" alt="PYZX repo logo"
+                                                                      style="width: 15rem; height:100%; object-fit: contain;" class="img-thumbnail ">
+                        </div>
+                        <div class="col p-4 d-flex flex-column position-static">
+                            <h3 class="mb-0">Qubit routing documentation - PYZX</h3>
+                            <div class="mb-1 text-body-secondary">30 May 2025</div>
+                            <p class="card-text mb-auto">As part of unitaryHACK 2025 I 
+                            contributed documentation to the PYZX repository</p>
+                            <a href="https://github.com/zxcalc/pyzx/pull/304" class="icon-link gap-1 icon-link-hover stretched-link">
+                                View PR
+                                <svg class="bi">
+                                    <use xlink:href="#chevron-right"></use>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <br>
         <!-- Projects section -->
         <div>
             <h1 id="projects">Projects</h1>
+            <h5>Note: These are fun pre-PhD projects not related to my current research</h5>
             <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 g-3">
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <img src="./assets/diss/conf_heatmap_test.png" class="card-img-top rounded"
+                            alt="Heatmap overlay of Bristol" style="height: 17rem; object-fit:scale-down;">
+                        <div class="card-body">
+                            <p class="card-subtitle">
+                                <span class="badge text-bg-info text-body-secondary">Python</span>
+                            </p>
+                            <h5 class="card-title">Dissertation</h5>
+                            <p class="card-text">Assisting first-time buyers in the housing market: A comparative 
+                            analysis of machine learning models for LSOA value forecasts</p>
+                            <!-- Button trigger modal -->
+                            <a href="assets/diss/Dissertation-ed22699.pdf"
+                                class="card-link btn btn-outline-primary">
+                                Report
+                            </a>
+                            <a href="https://github.com/ed22699/Dissertation"
+                                class="card-link btn btn-outline-primary">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-github" viewBox="0 0 16 16">
+                                    <path
+                                        d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8">
+                                    </path>
+                                </svg> Code
+                            </a>
+                        </div>
+                        <div class="card-footer text-body-secondary small">
+                            May 2026
+                        </div>
+                    </div>
+                </div>
                 <div class="col">
                     <div class="card shadow-sm">
                         <img src="./assets/HeadwayPics/frontImage.png" class="card-img-top rounded"
@@ -117,8 +210,8 @@
                                 <span class="badge text-bg-info text-body-secondary">Firebase</span>
                             </p>
                             <h5 class="card-title">Headway</h5>
-                            <p class="card-text">An updated version of Timed Progress 
-                            which has been released on the app store</p>
+                            <p class="card-text">An app made to help me reach weekly 
+                            time goals for specific tasks</p>
                             <!-- Button trigger modal -->
                             <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal"
                                 data-bs-target="#headwayModal">
@@ -127,6 +220,9 @@
                             <a href="https://headwayapp.org/" class="card-link btn btn-outline-primary">
                                 App
                             </a>
+                        </div>
+                        <div class="card-footer text-body-secondary small">
+                            September 2025
                         </div>
                     </div>
                 </div>
@@ -164,29 +260,8 @@
                                 </svg> Docs
                             </a>
                         </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card shadow-sm">
-                        <img src="./assets/Sepsis/WhatsApp Image 2025-04-11 at 18.33.11.jpeg" class="card-img-top rounded"
-                            alt="base screen for app" style="height: 17rem; object-fit: scale-down;">
-                        <div class="card-body">
-                            <p class="card-subtitle">
-                                <span class="badge text-bg-info text-body-secondary">Python</span>
-                                <span class="badge text-bg-info text-body-secondary">Group Project</span>
-                            </p>
-                            <h5 class="card-title">Real-World LightGBM Sepsis Prediction</h5>
-                            <p class="card-text">A third year data science project where as a group of 6 we developed 
-                            a real-time sepsis predictor.</p>
-                            <!-- Button trigger modal -->
-                            <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal"
-                                data-bs-target="#sepsisModal">
-                                More
-                            </button>
-                            <a href="assets/Sepsis/Sepsis_Report.pdf"
-                                class="card-link btn btn-outline-primary">
-                                Report
-                            </a>
+                        <div class="card-footer text-body-secondary small">
+                            April 2025
                         </div>
                     </div>
                 </div>
@@ -217,37 +292,8 @@
                                 </svg> Code
                             </a>
                         </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card shadow-sm">
-                        <img src="./assets/imageSorter/starting-screen.png" class="card-img-top rounded"
-                            alt="base screen for app" style="height: 17rem; object-fit: cover;">
-                        <div class="card-body">
-                            <p class="card-subtitle">
-                                <span class="badge text-bg-info text-body-secondary">C#</span>
-                                <span class="badge text-bg-info text-body-secondary">.NET</span>
-                                <span class="badge text-bg-info text-body-secondary">Avalonia</span>
-                                <span class="badge text-bg-info text-body-secondary">Shell Script</span>
-                            </p>
-                            <h5 class="card-title">Image Sorter</h5>
-                            <p class="card-text">an Application where
-                                a collection of images can be reorganised automatically
-                                based off features within those images</p>
-                            <!-- Button trigger modal -->
-                            <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal"
-                                data-bs-target="#imageSorterModal">
-                                More
-                            </button>
-                            <a href="https://github.com/Bristol-SEP/image-sorter"
-                                class="card-link btn btn-outline-primary">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                    class="bi bi-github" viewBox="0 0 16 16">
-                                    <path
-                                        d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8">
-                                    </path>
-                                </svg> Code
-                            </a>
+                        <div class="card-footer text-body-secondary small">
+                            March 2025
                         </div>
                     </div>
                 </div>
@@ -282,6 +328,9 @@
                                 </svg> Code
                             </a>
                         </div>
+                        <div class="card-footer text-body-secondary small">
+                            May 2024
+                        </div>
                     </div>
                 </div>
                 <div class="col">
@@ -303,34 +352,8 @@
                                 More
                             </button>
                         </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card shadow-sm">
-                        <img src="./assets/timedProgress/photo-collage.png" class="card-img-top rounded"
-                            alt="Base screen of app" style="height: 17rem; object-fit:scale-down;">
-                        <div class="card-body">
-                            <p class="card-subtitle">
-                                <span class="badge text-bg-info text-body-secondary">Swift</span>
-                                <span class="badge text-bg-info text-body-secondary">Realm</span>
-                            </p>
-                            <h5 class="card-title">Timed Progress</h5>
-                            <p class="card-text">A mobile app where you can schedule
-                                deadlines or weekly habits along with their estimated
-                                time for completion and track timed progress</p>
-                            <!-- Button trigger modal -->
-                            <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal"
-                                data-bs-target="#timedProgressModal">
-                                More
-                            </button>
-                            <a href="https://github.com/SonnyCoop/AdapSchApp" class="card-link btn btn-outline-primary">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                    class="bi bi-github" viewBox="0 0 16 16">
-                                    <path
-                                        d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8">
-                                    </path>
-                                </svg> Code
-                            </a>
+                        <div class="card-footer text-body-secondary small">
+                            February 2024
                         </div>
                     </div>
                 </div>
@@ -363,6 +386,9 @@
                                 </svg> Code
                             </a>
                         </div>
+                        <div class="card-footer text-body-secondary small">
+                            May 2022
+                        </div>
                     </div>
                 </div>
                 <div class="col">
@@ -392,112 +418,49 @@
                                 </svg> Code
                             </a>
                         </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <br>
-        <!-- Blog Section -->
-        <div>
-            <h1 id="blog">Blog Posts</h1>
-            <div class"row row-cols-1">
-                <div class="col">
-                    <div
-                            class="row g-0 border rounded overflow-hidden flex-md-row mb-3 shadow-sm h-md-250 position-relative align-items-center card">
-                        <div class="col-auto d-none d-md-block " style="height: 10rem;">
-                            <img src="./assets/summerWorkflow/GitHubGraph.png" alt="GitHub commits graph"
-                                                                      style="width: 15rem; height:100%; object-fit: contain;" class="img-thumbnail ">
-                        </div>
-                        <div class="col p-4 d-flex flex-column position-static">
-                            <h3 class="mb-0">How Summer Affected My Workflow And Habits</h3>
-                            <div class="mb-1 text-body-secondary">3 Sep 2024</div>
-                            <p class="card-text mb-auto">A discussion about the 
-                            steps I took to better myself in my discipline despite 
-                            not having an internship</p>
-                            <a href="./public/blog/summerWorkflow.html" class="icon-link gap-1 icon-link-hover stretched-link">
-                                Continue reading
-                                <svg class="bi">
-                                    <use xlink:href="#chevron-right"></use>
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div
-                            class="row g-0 border rounded overflow-hidden flex-md-row mb-3 shadow-sm h-md-250 position-relative align-items-center card">
-                        <div class="col-auto d-none d-md-block " style="height: 10rem;">
-                            <img src="./assets/neovim/neovimLogo.png" alt="neovim logo"
-                                                                      style="width: 15rem; height:100%; object-fit: contain;" class="img-thumbnail ">
-                        </div>
-                        <div class="col p-4 d-flex flex-column position-static">
-                            <h3 class="mb-0">Learning Neovim</h3>
-                            <div class="mb-1 text-body-secondary">1 Aug 2024</div>
-                            <p class="card-text mb-auto">A description of my neovim
-                            journey, from learning key bindings to creating a setup to
-                            my overall opinion of the test editor</p>
-                            <a href="./public/blog/neovim.html" class="icon-link gap-1 icon-link-hover stretched-link">
-                                Continue reading
-                                <svg class="bi">
-                                    <use xlink:href="#chevron-right"></use>
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div
-                        class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative align-items-center card">
-                        <div class="col-auto d-none d-md-block" style="height: 10rem;">
-                            <img src="./assets/wallProjections/Wall-Projections-Image.png" alt="wall projection setup"
-                                style="width: 15rem; height:100%; object-fit: contain;" class="img-thumbnail">
-                        </div>
-                        <div class="col p-4 d-flex flex-column position-static">
-                            <h3 class="mb-0">An interactive exhibit for the Bristol Museum</h3>
-                            <div class="mb-1 text-body-secondary">25 Jun 2024</div>
-                            <p class="card-text mb-auto">A description of the challenges we
-                                had to overcome and the methods we took for the Wall Projections project</p>
-                            <a href="./public/blog/wallProjections.html"
-                                class="icon-link gap-1 icon-link-hover stretched-link">
-                                Continue reading
-                                <svg class="bi">
-                                    <use xlink:href="#chevron-right"></use>
-                                </svg>
-                            </a>
+                        <div class="card-footer text-body-secondary small">
+                            July 2020
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <footer class="d-flex flex-wrap justify-content-center align-items-center py-3 my-4 border-top">
-        <h3 class="text-body-secondary text-center col-12 pb-3">Contact Me</h3>
-        <ul class="nav col-12 justify-content-center list-unstyled d-flex">
-            <li class="ms-3"><a class="text-body-secondary" href="https://www.linkedin.com/in/sonnycoop">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
-                        class="bi bi-linkedin" viewBox="0 0 16 16">
-                        <path
-                            d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z">
-                        </path>
-                    </svg>
-                </a></li>
-            <li class="ms-3"><a class="text-body-secondary" href="https://www.facebook.com/sonny.cooper.92560/">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
-                        class="bi bi-facebook" viewBox="0 0 16 16">
-                        <path
-                            d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951">
-                        </path>
-                    </svg>
-                </a></li>
-            <li class="ms-3"><a class="text-body-secondary" href="mailto: sonnykidd@icloud.com">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
-                        class="bi bi-envelope" viewBox="0 0 16 16">
-                        <path
-                            d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z">
-                        </path>
-                    </svg>
-                </a></li>
-        </ul>
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-4 px-3 my-4 border-top">
+        <!-- Left side: MaVi Group Link -->
+        <div>
+            <h5 class="mb-0">
+                <a class="text-body-secondary text-decoration-none" href="https://uob-mavi.github.io/people/">MaVi Group Webpage</a>
+            </h5>
+        </div>
+
+        <!-- Right side: Contact Me heading on top, icons below -->
+        <div class="d-flex flex-column align-items-end">
+            <h5 class="text-body-secondary mb-2">Contact Me</h5>
+            <ul class="nav list-unstyled d-flex mb-0">
+                <li class="ms-3">
+                    <a class="text-body-secondary" href="https://www.linkedin.com/in/sonnycoop" target="_blank" rel="noopener noreferrer">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+                            <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"></path>
+                        </svg>
+                    </a>
+                </li>
+                <li class="ms-3">
+                    <a class="text-body-secondary" href="https://www.facebook.com/sonny.cooper.92560/" target="_blank" rel="noopener noreferrer">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                            <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"></path>
+                        </svg>
+                    </a>
+                </li>
+                <li class="ms-3">
+                    <a class="text-body-secondary" href="mailto:sonnykidd@icloud.com">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+                            <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z"></path>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+        </div>
     </footer>
 
 
@@ -642,245 +605,6 @@
         </div>
     </div>
     </div>
-
-
-    <!-- Sepsis Modal -->
-    <div class="modal fade" id="sepsisModal" tabindex="-1" aria-labelledby="sepsisModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog modal-lg modal-dialog-scrollable">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h1 class="modal-title" id="sepsisModalLabel">Real-World LightGBM Sepsis Prediction</h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <div class="container-fluid">
-                        <p>
-                            <span class="badge text-bg-info text-body-secondary">Python</span>
-                            <span class="badge text-bg-info text-body-secondary">Group Project</span>
-                        </p>
-                        <p class="text-body-secondary">A third year data science project where as a group of 6 we developed 
-                            a real-time sepsis predictor.</p>
-                        <!-- carousel -->
-                        <div id="sepsisCarousel" class="carousel slide carousel-dark bg-secondary-subtle"
-                            style="height: 500px;">
-                            <div class="carousel-indicators">
-                                <button type="button" data-bs-target="#sepsisCarousel" data-bs-slide-to="0" class="active"
-                                    aria-current="true" aria-label="Slide 1"></button>
-                                <button type="button" data-bs-target="#sepsisCarousel" data-bs-slide-to="1"
-                                    aria-label="Slide 2"></button>
-                                <button type="button" data-bs-target="#sepsisCarousel" data-bs-slide-to="2"
-                                    aria-label="Slide 3"></button>
-                                <button type="button" data-bs-target="#sepsisCarousel" data-bs-slide-to="3"
-                                    aria-label="Slide 4"></button>
-                            </div>
-                            <div class="carousel-inner">
-                                <div class="carousel-item active">
-                                    <img src="../../assets/Sepsis/WhatsApp Image 2025-04-11 at 18.33.11.jpeg" class="d-block w-100"
-                                        style="height: 500px; object-fit: contain;" alt="base screen">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="../../assets/Sepsis/Screenshot 2025-04-16 at 00.17.41.png" class="d-block w-100"
-                                        style="height: 500px; object-fit: contain;" alt="model scores">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="../../assets/Sepsis/Screenshot 2025-04-16 at 14.47.48.png" class="d-block w-100"
-                                        style="height: 500px; object-fit: contain;" alt="feature corrolation dendrogram">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="../../assets/Sepsis/Screenshot 2025-04-26 at 12.54.51.png" class="d-block w-100"
-                                        style="height: 500px; object-fit: contain;" alt="transformer structure diagram">
-                                </div>
-                            </div>
-                            <button class="carousel-control-prev" type="button" data-bs-target="#sepsisCarousel"
-                                data-bs-slide="prev">
-                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Previous</span>
-                            </button>
-                            <button class="carousel-control-next" type="button" data-bs-target="#sepsisCarousel"
-                                data-bs-slide="next">
-                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Next</span>
-                            </button>
-                        </div>
-                        <br>
-                        <h2>My Primary Contributions To This Project</h2>
-                        <ul>
-                            <li>Researched sepsis symptoms to better understand
-                                how the features given in the dataset would likely
-                                correlate to the symptoms</li> 
-                            <li>Participated in the initial data exploration of the
-                            non-continuous features. This consisted of both
-                            non-parametric techniques such as finding means
-                            and standard deviations before producing a Mann-Whitney U test and 
-                            JSD plot, along with parametric techniques such as box-and-whisker plots to help
-                            us further understand the underlying structure of
-                            the features and why some that were expected to
-                            be good were not. An example of this is age where
-                            it was a poor metric due to its very equal dispersion
-                            between sepsis and non-sepsis patients.
-                            </li>
-                            <li>Researched the medical scores used. This consisted
-                            of producing a SHAP summary plot of all features
-                            of the dataset after these medical scores had been
-                            added. A XGBoost model was then produced with
-                            this new dataset so its precision, recall, F1-score
-                            and AUC score could be compared.
-                            </li>
-                            <li>Created the transformer model, this consisted of
-                            further imputation and feature selection to ensure
-                            the model was not overfitted through its excessive
-                            number of features. These features were selected
-                            based on their low correlation with other features
-                            and their level of missingness to reduce imputations
-                            effect on feature quality. For training the
-                            model early stopping was implemented to reduce
-                            overfitting and the GPU utilised to ensure this was
-                            done quickly. Finally, testing consisted of taking
-                            the model from the epoch loop with the lowest value
-                            loss and testing it in a way consistent to that of the
-                            other models.
-                            </li>
-                        </ul>
-                        <h2>Tech Stack</h2>
-                        <ul>
-                            <li><b>Programming Language:</b> Python</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    </div>
-
-    <!-- Timed Progress Modal -->
-    <div class="modal fade" id="timedProgressModal" tabindex="-1" aria-labelledby="timedProgressModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog modal-lg modal-dialog-scrollable">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h1 class="modal-title" id="timedProgressModalLabel">Timed Progress</h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <div class="container-fluid">
-                        <p>
-                            <span class="badge text-bg-info text-body-secondary">Swift</span>
-                            <span class="badge text-bg-info text-body-secondary">Realm</span>
-                        </p>
-                        <p class="text-body-secondary">A mobile app where you can schedule
-                            deadlines or weekly habits along with their estimated
-                            time for completion and track timed progress</p>
-                        <!-- carousel -->
-                        <div id="carousel" class="carousel slide carousel-dark bg-secondary-subtle"
-                            style="height: 500px;">
-                            <div class="carousel-indicators">
-                                <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active"
-                                    aria-current="true" aria-label="Slide 1"></button>
-                                <button type="button" data-bs-target="#carousel" data-bs-slide-to="1"
-                                    aria-label="Slide 2"></button>
-                                <button type="button" data-bs-target="#carousel" data-bs-slide-to="2"
-                                    aria-label="Slide 3"></button>
-                                <button type="button" data-bs-target="#carousel" data-bs-slide-to="3"
-                                    aria-label="Slide 4"></button>
-                                <button type="button" data-bs-target="#carousel" data-bs-slide-to="4"
-                                    aria-label="Slide 5"></button>
-                            </div>
-                            <div class="carousel-inner">
-                                <div class="carousel-item active">
-                                    <img src="../../assets/timedProgress/baseScreen.png" class="d-block w-100"
-                                        style="height: 500px; object-fit: contain;" alt="base screen">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="../../assets/timedProgress/timer.png" class="d-block w-100"
-                                        style="height: 500px; object-fit: contain;" alt="timer">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="../../assets/timedProgress/dailyTask.png" class="d-block w-100"
-                                        style="height: 500px; object-fit: contain;" alt="daily tasks">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="../../assets/timedProgress/weeklyTask.png" class="d-block w-100"
-                                        style="height: 500px; object-fit: contain;" alt="weekly tasks">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="../../assets/timedProgress/edit.png" class="d-block w-100"
-                                        style="height: 500px; object-fit: contain;" alt="edit screen">
-                                </div>
-                            </div>
-                            <button class="carousel-control-prev" type="button" data-bs-target="#carousel"
-                                data-bs-slide="prev">
-                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Previous</span>
-                            </button>
-                            <button class="carousel-control-next" type="button" data-bs-target="#carousel"
-                                data-bs-slide="next">
-                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Next</span>
-                            </button>
-                        </div>
-                        <br>
-                        <h2>Overview</h2>
-                        <p>I built this application with the intention of bettering my time
-                            management. The base concept of the app came from Universities 'hours
-                            per credit' systems where they prescribe a recommended amount of time to
-                            focus on each module per week. For example, a 20 credit module would be
-                            200 hours of work. Working off this concept my app lets you add tasks
-                            with their required hours per week so you may: view this progress, see if you
-                            are hitting the goals and see whether you are neglecting certain modules.</p>
-                        <p>
-                            I later expanded this focus on Uni life and added individual tasks.
-                            These are tasks with deadlines (such as a coursework
-                            or dissertation), again you would prescribe a target time to complete this
-                            task. Along with this I added in an advanced feature where you could alter
-                            the time blocks you would like to work towards the target in, meaning the timer
-                            could count down from a different starting number depending on the task
-                            being completed.
-                        </p>
-                        <h2>Features</h2>
-                        <h3>Adding, deleting and editing tasks</h3>
-                        <p>
-                            Due to only writing this project in swift, with the intention of it being
-                            used for iPhones and iPads, I didn't see the need to store user data remotely
-                            as the only benefits I could see for this type of data storage were
-                            syncing between devices (which is unlikely as the code is only for one
-                            type of device), or as a fail-safe in case local data is lost (this data
-                            is likely not that important to the user). As this is not enough to justify
-                            the costs, I instead opted to store all data locally through the use of
-                            Realm as this is a relatively friendly database management system.
-                        </p>
-                        <h3>Timer</h3>
-                        <p>
-                            The challenge I found with the timer is ensuring it persists when the
-                            phone is sent to sleep or the app is sent into the background. To get around
-                            this I decided to store the timer start time in a plist as this is a small
-                            amount of data which does not need to be searched or ordered and so a
-                            database would be overkill. The use of a plist in this instance would
-                            likely also result in quicker retrieval which is important
-                            to ensure the timer has less initial lag upon re-entering the app.
-                        </p>
-                        <h3>Sorting Tasks</h3>
-                        <p>
-                            For this I used a bubble sort as this will likely be a list under 15 or
-                            so items and so the extra code complexity of a merge sort, quick sort or
-                            any other O(n log n) algorithm would not me worth the impact on code
-                            readability.
-                        </p>
-                        <h2>Tech Stack</h2>
-                        <ul>
-                            <li><b>Programming Language:</b> Swift</li>
-                            <li><b>Development Environment:</b> Xcode</li>
-                            <li><b>UI Framework:</b> SwiftUI</li>
-                            <li><b>Database:</b> Realm</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    </div>
-
-
 
     <!-- GOL Modal -->
     <div class="modal fade" id="GOLModal" tabindex="-1" aria-labelledby="GOLModalLabel" aria-hidden="true">
@@ -1034,162 +758,6 @@
         </div>
     </div>
     </div>
-
-
-
-
-
-    <!-- Image Sorter Modal -->
-    <div class="modal fade" id="imageSorterModal" tabindex="-1" aria-labelledby="imageSorterModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog modal-lg modal-dialog-scrollable">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h1 class="modal-title" id="imageSorterModalLabel">Image Sorter</h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <div class="container-fluid">
-                        <p>
-                            <span class="badge text-bg-info text-body-secondary">C#</span>
-                            <span class="badge text-bg-info text-body-secondary">.NET</span>
-                            <span class="badge text-bg-info text-body-secondary">Avalonia</span>
-                            <span class="badge text-bg-info text-body-secondary">Shell Script</span>
-                        </p>
-                        <p class="text-body-secondary">An Application where
-                            a collection of images can be reorganised automatically
-                            based off features within those images</p>
-                        <!-- carousel -->
-                        <!-- <div id="carousel" class="carousel slide carousel-dark bg-secondary-subtle" -->
-                        <!--     style="height: 500px;"> -->
-                        <!--     <div class="carousel-indicators"> -->
-                        <!--         <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active" -->
-                        <!--             aria-current="true" aria-label="Slide 1"></button> -->
-                        <!--         <button type="button" data-bs-target="#carousel" data-bs-slide-to="1" -->
-                        <!--             aria-label="Slide 2"></button> -->
-                        <!--         <button type="button" data-bs-target="#carousel" data-bs-slide-to="2" -->
-                        <!--             aria-label="Slide 3"></button> -->
-                        <!--         <button type="button" data-bs-target="#carousel" data-bs-slide-to="3" -->
-                        <!--             aria-label="Slide 4"></button> -->
-                        <!--         <button type="button" data-bs-target="#carousel" data-bs-slide-to="4" -->
-                        <!--             aria-label="Slide 5"></button> -->
-                        <!--     </div> -->
-                        <!--     <div class="carousel-inner"> -->
-                        <!--         <div class="carousel-item active"> -->
-                        <!--             <img src="../../assets/timedProgress/baseScreen.png" class="d-block w-100" -->
-                        <!--                 style="height: 500px; object-fit: contain;" alt="base screen"> -->
-                        <!--         </div> -->
-                        <!--         <div class="carousel-item"> -->
-                        <!--             <img src="../../assets/timedProgress/timer.png" class="d-block w-100" -->
-                        <!--                 style="height: 500px; object-fit: contain;" alt="timer"> -->
-                        <!--         </div> -->
-                        <!--         <div class="carousel-item"> -->
-                        <!--             <img src="../../assets/timedProgress/dailyTask.png" class="d-block w-100" -->
-                        <!--                 style="height: 500px; object-fit: contain;" alt="daily tasks"> -->
-                        <!--         </div> -->
-                        <!--         <div class="carousel-item"> -->
-                        <!--             <img src="../../assets/timedProgress/weeklyTask.png" class="d-block w-100" -->
-                        <!--                 style="height: 500px; object-fit: contain;" alt="weekly tasks"> -->
-                        <!--         </div> -->
-                        <!--         <div class="carousel-item"> -->
-                        <!--             <img src="../../assets/timedProgress/edit.png" class="d-block w-100" -->
-                        <!--                 style="height: 500px; object-fit: contain;" alt="edit screen"> -->
-                        <!--         </div> -->
-                        <!--     </div> -->
-                        <!--     <button class="carousel-control-prev" type="button" data-bs-target="#carousel" -->
-                        <!--         data-bs-slide="prev"> -->
-                        <!--         <span class="carousel-control-prev-icon" aria-hidden="true"></span> -->
-                        <!--         <span class="visually-hidden">Previous</span> -->
-                        <!--     </button> -->
-                        <!--     <button class="carousel-control-next" type="button" data-bs-target="#carousel" -->
-                        <!--         data-bs-slide="next"> -->
-                        <!--         <span class="carousel-control-next-icon" aria-hidden="true"></span> -->
-                        <!--         <span class="visually-hidden">Next</span> -->
-                        <!--     </button> -->
-                        <!-- </div> -->
-                        <br>
-                        <h2>Overview</h2>
-                        <p>
-                            A friend who works for a rowing photography company came across a problem
-                            when a bunch of boats set off at a race out of number order. Due
-                            to this the photos from this race could not be split into the
-                            usual groups of 50 that they would usually be split into. To
-                            solve this he wanted an app which could extract the bow number
-                            from the image and sort it into the correct folders. As someone
-                            who used to row and so had been to this photography store occasionally
-                            I recommended that we also added in the boat code (this is a number
-                            on the side of all boats which is used to identify a row club)
-                            this way the images could also be sorted per club making it
-                            easier to go through these photos with your friends.
-                        </p>
-                        <p>
-                            To start this I began on the front-end since I had recently
-                            completed this on another project. For this my plan was to
-                            split it into sections:
-                        <ol>
-                            <li>Select features to be extracted</li>
-                            <li>Select target folder where all the images are held</li>
-                            <li>Process the images (runs the python script with the parameters given in the previous 2
-                                sections)</li>
-                            <li>Structure the folder (deciding where each feature should impact)</li>
-                            <li>Order the folder (looks at the images metadata and reorganises the folder to the new
-                                structure via a shell script)</li>
-                        </ol>
-                        </p>
-                        <p>
-                            As this is a large project to do individually I decided to
-                            structure it so all buttons, boxes and colours would only need
-                            to be changed in one place. This way I could focus on delivering
-                            a functional product first (the worse looking UI also benefits user
-                            testing as they focus criticism less on colours and shapes and more on the core
-                            functionality
-                            as it appears to be in early stages). With this I worked through
-                            all the bullet points above (leaving out the actual calling of the python script
-                            as I was yet to write it).
-                        </p>
-                        <p>
-                            Next I focused on the organising of the folders post metadata tagging.
-                            To do this I created a folder and tagged 50 photos with various
-                            boat codes and bow numbers using a quick script so I would have test
-                            data for this task. To sort the photos I decided to use a shell
-                            script as it seemed like the logical language for desktop iteration.
-                        </p>
-                        <p>
-                            My final task is the back-end and the feature extraction, this
-                            will be difficult as some images will cut out these features. Due
-                            to this I plan to run two scripts concurrently. The first script will
-                            attempt to extract these features from as many images as possible
-                            then the second script will extrapolate using the order of images
-                            and the colours within the images (boats vary in colour and so
-                            do the kit per club). This is where I am currently up to
-                            in this project.
-                        </p>
-                        <h2>Tech Stack</h2>
-                        <ul>
-                            <li><b>Front-End</b></li>
-                            <ul>
-                                <li><b>Programming Language:</b> C#</li>
-                                <li><b>UI Framework:</b> Avalonia</li>
-                                <li><b>Framework:</b> .NET</li>
-                            </ul>
-                            <li><b>Back-End</b></li>
-                            <ul>
-                                <li><b>Programming Language:</b> Python</li>
-                                <li><b>Interoperability:</b> Python.NET</li>
-                            </ul>
-                            <li>Automation</li>
-                            <ul>
-                                <li><b>Folder Sorting:</b> Shell Script</li>
-                            </ul>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    </div>
-
-
 
     <!-- ANPR Gate Modal -->
     <div class="modal fade" id="ANPRGateModal" tabindex="-1" aria-labelledby="ANPRGateModalLabel" aria-hidden="true">
