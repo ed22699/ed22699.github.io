@@ -1,1 +1,13 @@
 .DS_Store
+*.tex
+*.fls
+*.aux
+*.fdb_latexmk
+*.synctex.gz
+*.log
+*.out
+*Transcript.pdf
+*Transcript.pdf
+*proposal.pdf
+*personalStatement.pdf
+*University of Bristol.pdf
